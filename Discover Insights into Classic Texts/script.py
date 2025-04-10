@@ -10,7 +10,7 @@ word_tokenized_text = word_sentence_tokenize(text)
 
 # store and print any word tokenized sentence here
 single_word_tokenized_sentence = word_tokenized_text[100]
-print(single_word_tokenized_sentence)
+
 
 
 # create a list to hold part-of-speech tagged sentences here
@@ -23,7 +23,7 @@ for phrase in word_tokenized_text:
 
 # store and print any part-of-speech tagged sentence here
 single_pos_sentence = pos_tagged_text[100]
-print(single_pos_sentence)
+
 
 # define noun phrase chunk grammar here
 np_chunk_grammar = "NP: {<DT>?<JJ>*<NN>}"
@@ -49,8 +49,10 @@ for phrase in pos_tagged_text:
 
 # store and print the most common NP-chunks here
 most_common_np_chunks = np_chunk_counter(np_chunked_text)
+print('Most common NP chunks:')
 print(most_common_np_chunks)
 
 # store and print the most common VP-chunks here
 most_common_vp_chunks = vp_chunk_counter(vp_chunked_text)
+print('Most common VP chunks')
 print(most_common_vp_chunks)
